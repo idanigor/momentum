@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="height=700, width=320, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+
+      <div class="player-main">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+
+        <div class="player-pro">
+          <div class="player-title"></div>
+          <div class="duration">
+            <div class="progress"></div>
+          </div>
+          <div class="player-box">
+            <div class="time-container">
+              <span class="time-progress">0:00</span>
+              <span>/</span>
+              <span class="time-duration">99:99</span>
+            </div>
+            <div class="volume-container">
+              <button class="mute mute-mini"></button>
+              <div class="volume-duration">
+                <div class="volume-progress"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container hello">
+      <span class="greeting"></span>
+      <input type="text" class="name">
+    </div>
+  </main>
+  <footer class="footer">
+
+    <div class="quote-container quote">
+      <button class="change-quote"></button>
+      <div class="quotes"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer-container">
+      <button class="play-prev player-icon settings-image"></button>
+      <div class="button-link-wrapper">
+        <a href="https://rs.school/js/" class="button-link"><img src="assets/svg/rs_school.svg" alt="rs_school"></a>
+        <a href="https://github.com/idanigor" class="button-link"><img src="assets/svg/github.svg" alt="github"></a>
+      </div>
+    <button class="play-prev player-icon todo"></button>
+    </div>
+  </footer>
+  <div class="settings visible-off">
+    <ul class="settings-list">
+      <li class="settings-item">
+        <span class='label-set'></span>
+        <select name="language" class="language">
+          <option value="en">English </option>
+          <option value="ru">Русский</option>
+        </select>
+      </li>
+      <li class="settings-item">
+        <span class='label-set'></span>
+        <select name="background" class="background">
+          <option value="github">GitHUb</option>
+          <option value="unsplash">Unsplash</option>
+          <option value="flickr">Flickr</option>
+        </select>
+      </li>
+      <li class="settings-item">
+        <span class='label-set'></span>
+        <input type="text" class='input-teg' size="9">
+      </li>
+    </ul>
+    <ul class="settings-display">
+      <li class="settings-item">
+        <label class='label-set' for="quote-checkbox"></label><br>
+        <input type="checkbox" id="quote-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="weather-checkbox"></label><br>
+        <input type="checkbox" id="weather-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="player-checkbox"></label><br>
+        <input type="checkbox" id="player-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="time-checkbox"></label><br>
+        <input type="checkbox" id="time-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="date-checkbox"></label><br>
+        <input type="checkbox" id="date-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="hello-checkbox"></label><br>
+        <input type="checkbox" id="hello-checkbox" checked>
+      </li>
+      <li class="settings-item">
+        <label class='label-set' for="todo-checkbox"></label><br>
+        <input type="checkbox" id="todo-checkbox" checked>
+      </li>
+      <ul />
+  </div>
+  <div class="todom visible-off">
+    <div class='todo-list'></div>
+    <div>
+      <span class="todo-label"></span>
+      <input class="todo-input" type="text" size="25">
+    </div>
+  </div>
+  </div>
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+export const settings = {
+	lang: {
+		en: 'en',
+		ru: 'ru',
+	},
+	slider: {
+		github: 'github',
+		unsplash: 'unsplash',
+		flickr: 'flickr',
+	},
+	display: {
+		quote: true,
+		weather: true,
+		player: true,
+		time: true,
+		date: true,
+		hello: true,
+		todo: true,
+	},
+	label: {
+		en: [
+			'Language',
+			'Photo source',
+			'Tag',
+			'Quotes',
+			'Weather',
+			'Player',
+			'Time',
+			'Date',
+			'Greetings',
+			'To-do list',
+		],
+		ru: [
+			'Язык',
+			'Источник фото',
+			'Тег',
+			'Цитаты',
+			'Погода',
+			'Плеер',
+			'Время',
+			'Дата',
+			'Приветствие',
+			'Список дел',
+		],
+	},
+	tasks : [],
+}
